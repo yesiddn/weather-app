@@ -1,0 +1,67 @@
+/* 
+#023859
+#07D9B2
+#04D99D
+#DAF2C2
+#F2DC6B
+ */
+:root {
+  --primary-color: #023859;
+  --secondary-color: #07D9B2;
+  --tertiary-color: #04D99D;
+  --light-color: #DAF2C2;
+  --dark-color: #F2DC6B;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100svh;
+  margin-top: 3rem;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.search-city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-city input {
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.search-city input:focus {
+  outline: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.search-city button {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-city span {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.search-city button:hover {
+  background-color: var(--tertiary-color);
+}
